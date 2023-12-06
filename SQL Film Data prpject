@@ -1,9 +1,0 @@
-``` sql
-/**Identify films with the highest number of user and critic reviews**/
-SELECT title, num_user AS highest_num_of_user, num_critic AS highest_num_of_critic
-FROM films AS f
-JOIN reviews AS r
-ON f.id =r.film_id
-WHERE num_user IS NOT NULL
-GROUP BY title, highest_num_of_user, highest_num_of_critic 
-ORDER BY highest_num_of_user DESC, highest_num_of_critic 
