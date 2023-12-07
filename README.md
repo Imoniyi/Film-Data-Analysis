@@ -1,9 +1,12 @@
 # Film-Data-Analysis
-Exploratory Data Analysis on Film Data Using PostgreSQL
+Exploratory Data Analysis on Film Data Using PostgreSQL and PowerBI for visualization
 # Introduction 
 This was a project given to me while taking my data analytics course with Dahel Techies. The goal is for me to apply the SQL skills I have learned throughout the course to perform exploratory data analysis on the "inidata" database, which contains information about films, people, reviews, and roles. The project will focus on retrieving, filtering, and analyzing data to answer real-life business questions related to the film industry.
 # Data source
 This data was gotten from Datacamp
+# Data cleaning
+The data was imported from SQL into PowerBi
+Duplicates rows(title) were removed. 
 ## Key questions to answer
 * What are the top 10 highest-grossing films in the database, and when were they released?
 * How many films in the database were released in each country, and what are the top five countries?
