@@ -26,8 +26,8 @@ PostgreSQL database was used.
 Writing complex queries with the following 
 * ALIASING function
 * GROUP BY function
-* WHERE
-* ORDER BY
+* WHERE clause
+* ORDER BY clause 
 * Aggregate function (using SUM, COUNT, AVERAGE). Also, the number of people still alive in the database was calculated. 
 * ORDER BY
 * Join
