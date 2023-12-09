@@ -25,7 +25,7 @@ Duplicates rows(title) were removed.
 # Technology and tool used
 The programming language used was SQL. 
 PostgreSQL database was used. 
-## SkillS used
+## Skills used
 Writing complex queries with the following 
 * ALIASING function
 * GROUP BY function
