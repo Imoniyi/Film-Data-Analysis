@@ -1,0 +1,25 @@
+/**Determine the top 10 people with the most roles in the database.
+Who are the top 10 actors or directors with the most roles in the database?**/
+select name, role, count(role)
+from roles AS r
+Join people AS p
+On r.id = p.id
+Group by name, role
+order by count(role)desc  
+
+
+
+/** What are the top 10 highest-grossing films in the database, and when were they released?**/
+SELECT DISTINCT(title), gross, release_year
+FROM films
+WHERE GROSS IS NOT NULL
+ORDER BY GROSS DESC
+lIMIT 10
+
+/** How many films in the database were released in each country, and what are the top five countries?**/
+SELECT COUNT (DISTINCT title), country
+FROM films
+GROUP BY country 
+ORDER BY COUNT (DISTINCT title) DESC
+lIMIT 5
+
