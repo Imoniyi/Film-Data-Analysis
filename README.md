@@ -6,7 +6,7 @@ This was a project given to me while taking my data analytics course with Dahel 
 This data was gotten from Datacamp
 # Data cleaning
 The data was imported from SQL into PowerBi
-Duplicates rows(title) were removed. 
+Duplicate rows were removed. 
 ## Key questions to answer
 * What are the top 10 highest-grossing films in the database, and when were they released?
 * How many films in the database were released in each country, and what are the top five countries?
@@ -17,8 +17,6 @@ Duplicates rows(title) were removed.
 * How many people in the database are still alive (based on birthdate and death date)?
 * Which year has the highest number of movie releases?
 * Determine the top 10 people with the most roles in the database.
-* Who are the top 10 actors or directors with the most roles in the database?
-* Identify how many people in the database are still alive.
 * Calculate the average number of user and critic reviews for films.
 * Identify films with the highest number of user and critic reviews.
 * Which films have the most Facebook likes, and is there a correlation with their IMDb scores?
