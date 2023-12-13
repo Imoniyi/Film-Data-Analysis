@@ -32,7 +32,7 @@ Writing complex queries with the following
 * Aggregate function (using SUM, COUNT, AVERAGE). Also, the number of people still alive in the database was calculated. 
 * ORDER BY
 * JOIN
-# Result from the Analysis
+# Visualization
 # Key findings
 * Star Wars: Episode Vii- The Force Awakens had the highest-grossing film in the database with a gross amount of over $936 Million and it was produced in the year 2015.
 * The United States of America produced a total of 3750 movies making it the country with the most movie production in the database.
