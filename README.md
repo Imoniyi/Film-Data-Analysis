@@ -31,10 +31,10 @@ Writing complex queries with the following
 * ORDER BY clause 
 * Aggregate function (using SUM, COUNT, AVERAGE). Also, the number of people still alive in the database was calculated. 
 * ORDER BY
-* Join
+* JOIN
 # Result from the Analysis
 # Key findings
-* Star Wars: Episode Vii- The Force Awakens had the highest-grossing film in the database with a gross amount of over $936 Million and it was produced in year 2015.
+* Star Wars: Episode Vii- The Force Awakens had the highest-grossing film in the database with a gross amount of over $936 Million and it was produced in the year 2015.
 * The United States of America produced a total of 3750 movies making it the country with the most movie production in the database.
 * The movies in the database were produced in 47 different languages. English language was mainly spoken in most of the movies with about 4635 movies produced in English, 
   followed by French which had 72 movies produced in the French language. 40 movies were produced in Spanish.
