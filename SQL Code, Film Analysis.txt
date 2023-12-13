@@ -1,0 +1,105 @@
+
+--What are the top 10 highest-grossing films in the database, and when were they released?
+SELECT DISTINCT(title), gross, release_year
+FROM films
+WHERE GROSS IS NOT NULL
+ORDER BY GROSS DESC
+lIMIT 10
+
+/** How many films in the database were released in each country, and what are the top five countries?**/
+SELECT COUNT (DISTINCT title), country
+FROM films
+GROUP BY country 
+ORDER BY COUNT (DISTINCT title) DESC
+lIMIT 5
+
+/** How many films are available in each language, 
+and what are the top three languages represented?**/
+SELECT Language, COUNT(DISTINCT title)
+FROM films
+GROUP BY Language 
+ORDER BY COUNT (DISTINCT title) DESC
+Limit 3
+
+/** What is the average IMDb score for films in the database? **/
+SELECT AVG(imdb_score)
+FROM reviews
+
+
+/** Which country has made the highest profit from movies??**/
+SELECT AVG(gross-budget) highest_profit, country
+FROM films
+WHERE gross-budget IS NOT NULL
+GROUP BY  country
+ORDER BY AVG(gross-budget) DESC
+
+/** Which movie made the highest profit in the 21st century?**/
+SELECT AVG(gross-budget) highest_profit, release_year
+FROM films
+WHERE gross-budget IS NOT NULL
+GROUP BY  release_year
+HAVING release_year BETWEEN 2001 AND 2100
+ORDER BY AVG(gross-budget) DESC
+
+
+
+/**How many people in the database are still alive (based on birthdate and death date)?**/
+SELECT(COUNT(*) - COUNT(deathdate))
+FROM people
+
+
+/**Which year has the highest number of movie releases??**/
+SELECT release_year, COUNT(release_year)
+FROM films
+GROUP BY release_year
+ORDER BY COUNT(release_year) DESC
+LIMIT 3
+
+
+
+/**Determine the top 10 people with the most roles in the database.**/
+SELECT name, COUNT(role)
+FROM people AS p
+JOIN roles AS r
+ON p.id = r.person_id
+GROUP BY name
+ORDER BY COUNT(role) DESC  
+LIMIT 10
+
+
+/**Who are the top 10 actors or directors with the most roles in the database?.**/
+SELECT name, role, COUNT(role)
+FROM people AS p
+JOIN roles AS r
+ON p.id = r.person_id
+GROUP BY name, role
+HAVING role = 'actor' OR role = 'director'
+ORDER BY COUNT(role) DESC  
+LIMIT 10
+
+
+/**Calculate the average number of user and critic reviews for films.**/
+SELECT ROUND(AVG(num_user)) avg_num_user, AVG(num_critic) avg_num_critic
+FROM reviews
+
+/**Identify films with the highest number of user and critic reviews..**/
+SELECT title, num_user AS highest_num_user, num_critic AS highest_num_critic
+FROM films AS f
+JOIN reviews AS r
+ON f.id = r.film_id
+WHERE num_user IS NOT NULL
+GROUP BY title, highest_num_user, highest_num_critic
+ORDER BY highest_num_user DESC, highest_num_critic
+lIMIT 10
+
+/**Which films have the most Facebook likes, 
+and is there a correlation with their IMDb scores?..**/
+SELECT title, facebook_likes, imdb_score
+FROM films AS f
+JOIN reviews AS r
+ON f.id = r.film_id
+GROUP BY title, facebook_likes, imdb_score
+ORDER BY facebook_likes DESC,imdb_score
+
+
+
