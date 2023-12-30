@@ -24,14 +24,13 @@ Duplicate rows were removed.
 The programming language used was SQL. 
 PostgreSQL database was used. 
 ## Skills used
-Writing complex queries with the following 
-* ALIASING function
-* GROUP BY function
-* WHERE clause
-* ORDER BY clause 
+Writing complex queries with the following keywords
+* Aliasing
+* Group By 
+* Where 
+* Order By  
 * Aggregate function (using SUM, COUNT, AVERAGE). Also, the number of people still alive in the database was calculated. 
-* ORDER BY
-* JOIN
+* Join
 # Visualization
 # Key findings
 * Star Wars: Episode Vii- The Force Awakens had the highest-grossing film in the database with a gross amount of over $936 Million and it was produced in the year 2015.
